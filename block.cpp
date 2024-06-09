@@ -11,13 +11,13 @@ colors(GetCellColors())
 void Block::Draw(){
      std::vector<Position> tiles = GetCellPositions();
      for (Position item: tiles){
-          DrawRectangle(item.column* cellSize +1, item.row* cellSize +1, cellSize-1, cellSize-1, colors[id]);
+          DrawRectangle(item.column* cellSize +11, item.row* cellSize +11, cellSize-1, cellSize-1, colors[id]);
      }
 }
 
 void Block::Move(int row, int column){
-     rowOffset = row;
-     columnOffset = column;
+     rowOffset += row;
+     columnOffset += column;
 }
 
 std::vector<Position> Block::GetCellPositions(){
@@ -30,4 +30,20 @@ std::vector<Position> Block::GetCellPositions(){
           movedTiles.push_back(newPos);
      }
      return movedTiles;
+}
+
+void Block::Rotate()
+{
+     rotationState++;
+     if (rotationState == (int) cells.size()){
+          rotationState = 0;
+     }
+}
+
+void Block::UndoRotation()
+{
+     rotationState--;
+     if (rotationState == -1){
+          rotationState = cells.size() -1;
+     }
 }
