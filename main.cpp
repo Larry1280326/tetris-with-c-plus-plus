@@ -35,7 +35,7 @@ int main()
         ClearBackground(darkBlue);
         DrawTextEx(font, "Score", {365, 15}, 30, 2, WHITE);
         DrawTextEx(font, "Next", {370, 175}, 30, 2, WHITE);
-        if (game.gameOver) DrawTextEx(font, "GAME OVER", {330, 450}, 30, 2, WHITE);
+        if (game.gameOver) DrawTextEx(font, "GAME OVER", {320, 450}, 30, 2, WHITE);
         DrawRectangleRounded({320, 55, 170, 68}, 0.3, 6, lightBlue);
 
         char scoreText[10];
