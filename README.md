@@ -1,5 +1,5 @@
 # platform
-The testing platform is M2 MacBook Air (MacOS 14.4.1) with compiler g++-13 (Homebrew GCC 13.2.0) 13.2.0. I don't have a Windows and Linux device on my hand right now.
+The testing platform is Apple M2 MacBook Air (MacOS 14.4.1) with compiler g++-13 (Homebrew GCC 13.2.0) 13.2.0. I don't have a Windows and Linux device on my hand right now.
 
 # introduction
 This is a simplified version of [Tetris](https://en.wikipedia.org/wiki/Tetris) written in the programming language C++. 
