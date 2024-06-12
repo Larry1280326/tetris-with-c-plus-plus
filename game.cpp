@@ -34,7 +34,7 @@ Block Game::GetRandomBlock(){
 }
 
 std::vector<Block> Game::GetAllBlocks(){
-     return {TBlock(), JBlock(), LBlock(), OBlock(), SBlock(), ZBlock()};
+     return {TBlock(), JBlock(), LBlock(), OBlock(), SBlock(), ZBlock(), ColumnBlock()};
 }
 
 void Game::Draw(){

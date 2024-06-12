@@ -95,3 +95,14 @@ public:
         Move(0, 3);
     }
 };
+
+class ColumnBlock: public Block
+{
+public:
+    ColumnBlock(){
+        id= 8;
+        cells[0] = {Position(0,1), Position{1,1}, Position{2,1}, Position{3,1}};
+        cells[1] = {Position(1,0), Position{1,1}, Position{1,2}, Position{1,3}};
+        Move(0,3);
+    }
+};
